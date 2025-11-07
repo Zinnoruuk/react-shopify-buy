@@ -2,6 +2,13 @@ import './ShopifyProduct.css';
 
 import { useEffect, useRef } from "react";
 
+// declare ShopifyBuy on window globally
+declare global {
+  interface Window {
+    ShopifyBuy?: any;
+  }
+}
+
 interface ShopifyProductProps {
     id: string,                             // store's div's id
     productId: string,                      // storefront's Id
