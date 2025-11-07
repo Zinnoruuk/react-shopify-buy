@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Target & Module */
+    "target": "ES2019",                    // The JS version your code will compile to
+    "module": "ESNext",                    // Module system (ES modules, works well with bundlers like tsup)
+    "moduleResolution": "node",            // How modules are resolved (Node style)
+
+    /* Output & Declarations */
+    "declaration": true,                   // Generates .d.ts type declaration files for TS users
+    "declarationDir": "dist/types",        // Output folder for type declarations
+    "outDir": "dist",                       // Output folder for compiled JS
+    "emitDeclarationOnly": false,           // false → compile JS + .d.ts
+
+    /* Libraries & JSX */
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Include browser + modern JS APIs
+    "jsx": "react-jsx",                     // JSX transform for React 17+
+
+    /* Type Checking & Safety */
+    "strict": true,                         // Enable all strict type checking
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,                   // Skip checking of external type definitions
+
+    /* Interoperability */
+    "esModuleInterop": true,                // Allows `import x from 'y'` for CommonJS modules
+    "allowSyntheticDefaultImports": true,   // Lets default-import modules without a default export
+
+    /* JSON & Other Files */
+    "resolveJsonModule": true,              // Allows importing JSON files
+    "isolatedModules": true                 // Required for bundlers like tsup
+  },
+  "include": ["src"],                        // Files TypeScript will check
+  "exclude": ["node_modules", "dist"]        // Ignore dependencies & build output
+}
