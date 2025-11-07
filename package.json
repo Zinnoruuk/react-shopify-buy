@@ -1,0 +1,59 @@
+{
+  "name": "@Zinnoruuk/shopify-product",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Ryan Modica <ryanpmodica@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zinnoruuk/react-shopify-buy.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zinnoruuk/react-shopify-buy/issues"
+  },
+  "homepage": "https://github.com/Zinnoruuk/react-shopify-buy#readme",
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.126",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "react-scripts": "5.0.1",
+    "tsup": "^8.5.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "tsup",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
