@@ -69,6 +69,7 @@ export default function ProductsArea() {
 | storefrontAccessToken | string              | Your Storefront Access Token                  | Yes      |
 | buySDKUrl             | string              | Full URL pointing to Shopify Buy SDK script   | Yes      |
 | productCSS            | React.CSSProperties | Inline wrapper styles                         | Optional |
+
 The component dynamically creates a Shopify product UI instance into the container.
 
 ---
