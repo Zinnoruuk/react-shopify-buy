@@ -1,7 +1,7 @@
 # react-shopify-buy
 
 A React component wrapper for Shopify’s Buy Button SDK.  
-Easily embed Shopify products in your React app without touching raw `<script>` tags.
+Easily embed Shopify products in your React app — without manually injecting <script> tags.
 
 Written in TypeScript, reusable, and drop-in ready for any Shopify store.
 
@@ -62,13 +62,13 @@ export default function ProductsArea() {
 ---
 
 ## Props
-| prop                  | type                | description                                 | required |
-| --------------------- | ------------------- | ------------------------------------------- | -------- |
-| productId             | string              | Shopify product ID to render                | Yes      |
-| domain                | string              | Your Shopify Storefront domain              | Yes      |
-| storefrontAccessToken | string              | Your Storefront Access Token                | Yes      |
-| buySDKUrl             | string              | Full URL pointing to Shopify Buy SDK script | Yes      |
-| productCSS            | React.CSSProperties | Inline wrapper styles                       | Optional |
+| prop                  | type                | description                                   | required |
+| --------------------- | ------------------- | --------------------------------------------- | -------- |
+| id                    | string              | DOM element id for component mount container  | Yes      |
+| domain                | string              | Your Shopify Storefront domain                | Yes      |
+| storefrontAccessToken | string              | Your Storefront Access Token                  | Yes      |
+| buySDKUrl             | string              | Full URL pointing to Shopify Buy SDK script   | Yes      |
+| productCSS            | React.CSSProperties | Inline wrapper styles                         | Optional |
 The component dynamically creates a Shopify product UI instance into the container.
 
 ---
@@ -83,9 +83,9 @@ The Shopify Buy SDK also supports widget styling options (soon to be exposed as 
 ## Example Usage With Multiple Products
 ```tsx
 <div className="products">
-  <ShopifyProduct productId="8445476569241" domain="..." storefrontAccessToken="..." buySDKUrl="..." />
-  <ShopifyProduct productId="8445476569242" domain="..." storefrontAccessToken="..." buySDKUrl="..." />
-  <ShopifyProduct productId="8445476569243" domain="..." storefrontAccessToken="..." buySDKUrl="..." />
+  <ShopifyProduct id="8445476569241" domain="..." storefrontAccessToken="..." buySDKUrl="..." />
+  <ShopifyProduct id="8445476569242" domain="..." storefrontAccessToken="..." buySDKUrl="..." />
+  <ShopifyProduct id="8445476569243" domain="..." storefrontAccessToken="..." buySDKUrl="..." />
 </div>
 ```
 
